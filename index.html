@@ -5,23 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Code Quiz Challenge</title>
-        <link rel="stylesheet" href="/style.css" >
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Code Quiz Challenge</h2>
-                    </div>
-                </div>
-            </header>      
-                <div class="card-body">
-                    <h3>Try to answer the following code-related questions with the time limit<br>Keep in mind that invorrect answers will penalize your score/time by ten seconds!</h3>   
-                </div>
-            <div class="card-footer">
-                <button id="generate" class="btn">Start Quiz</button>   
+        <div class="header" id="header">
+
+            <h2>Code Quiz Challenge</h2>
+            <h3>Try to answer the following code-related questions with the time limit<br>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h3>   
+       
+        </div>
+        
+        <div id= "card" class="card">
+            <h1 id="question"></h1>
+            <div id="choices">
             </div>
+            <button id="submit" class="btn">Start Quiz</button>   
+            <p id="time"></p>
         </div>
         <script src="/script.js"></script>    
     </body>

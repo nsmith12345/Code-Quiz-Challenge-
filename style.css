@@ -1,0 +1,12 @@
+.header {
+    border: 5px outset black;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.card {
+    border: 5px;
+    background-color: white;
+    text-align: center; 
+}
