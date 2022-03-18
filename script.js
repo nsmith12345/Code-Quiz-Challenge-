@@ -35,7 +35,7 @@ var questions = [{
     3. "for loops",
     4. "console.log",
     correctAnswer: "4"},
-]
+];
 
 
 
