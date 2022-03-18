@@ -1,25 +1,35 @@
 // Assignment code here
 
+// Link start button to timer and start quiz questions
+document.createElement("button")
+
+let btn = document.createElement("button");
+btn.innerhtml = "Start Quiz";
+btn.onclick = function () {
+    alert("Button is clicked")
+};
+document.body.appendChild(btn);
+
 var questions = [{
     question: "1. Commonly used data types DO NOT include?",
     1. "strings",
     2. "booleans",
     3. "alerts",
-    4. "numbers"
+    4. "numbers",
     correctAnswer "3"},
 {
     question: "2. The condition in an if/else statement is enclosed with ________?",
     1. "quotes",
     2. "curly brackets",
     3. "parenthesis",
-    4. "square brackets"
+    4. "square brackets",
     correctAnswer: "3"},
 {
     question: "3. Arrays in JavaScript can be used to store_________?",
     1. "numbers and strings",
     2. "other arrays",
     3. "booleans",
-    4. "all of the above"
+    4. "all of the above",
     correctAnswer: "4"},
 {
     question: "4. String values must be enclosed within _________?",
@@ -37,9 +47,15 @@ var questions = [{
     correctAnswer: "4"},
 ];
 
-
-
-
+for(var i=0; i < questions.length; i++) 
+    var response = window.prompt(questions[i].prompt);
+    if(response == questions[i].answer){
+        score++;
+        alert("Correct!");
+    }   else {
+        alert("WRONG!");
+    }    
+    alert("you got " + score + "/" + questions.length);
 
 // countdown timer function here
 
