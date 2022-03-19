@@ -12,7 +12,7 @@ document.body.appendChild(btn);
 
 var questions = [{
     question: "1. Commonly used data types DO NOT include?",
-    1. "strings",
+    one: "strings",
     2. "booleans",
     3. "alerts",
     4. "numbers",
