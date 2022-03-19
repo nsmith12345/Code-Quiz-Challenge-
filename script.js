@@ -26,3 +26,42 @@ var score = 0; //Takes the value of time remaining at completion and stores it
 var timing = 0; //Interval timer, initially set to 0
 var userName = ""; //Stores the user name or initials
 
+//Quiz Questions Array
+var questions = [
+    {"Question": "Commonly used data types DO NOT include?",
+    "stringsA": strings,
+    "booleansB": booleans,
+    "alertsC": alerts,
+    "numbersD": numbers,
+    "correct": "c"
+    },
+    {"Question": "The condition in an if/else statement is enclosed with ________?"
+    "quotesA": quotes,
+    "curly bracketsB": curly brackets,
+    "parenthesisC": parenthesis,
+    "square bracketsD": square brackets,
+    "correct": "c"
+    },
+    {"Question": "Arrays in JavaScript can be used to store_________?"
+    "numbers and stringsA": numbers and strings,
+    "other arraysB": other arrays,
+    "booleansC": booleans,
+    "all of the above D": all of the above,
+    "correct": "d" 
+    },
+    {"Question": "String values must be enclosed within _________?",
+    "commasA": commas,
+    "curly bracketsB": curly brackets,
+    "quotesC": quotes,
+    "parenthesisD": parenthesis,
+    "correct": "a"
+    },
+    {"Question": "A very useful tool used during development and debugging for printing content to the debugger is?"
+    "JavaScriptA": JavaScript,
+    "terminal/bashB": terminal/bash,
+    "for loopsC": for loops,
+    "console.logD": console.log,
+    "correct": "d"
+    },
+];              
+    
