@@ -4,33 +4,57 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Code Quiz Challenge</title>
+        <title>Nate's Super Quiz</title>
         <link rel="stylesheet" href="./style.css">
     </head>
+    
     <body>
-        <header>
-            <div class="header"></div>
-            <h2>
-                <a href="/">View high scores</a>
-            </h2>
-            <div class="header h2">
-                <h2>Time:</h2>
-            </div>      
-        </header>
-                 
-        <div class="container"></div> 
-            <div id="home" class="flex-column flex-center">
-                <h1>Code Quiz Challenge</h1>
-                <h3>Try to answer the following code-related questions with the time limit<br>Keep in mind that incorrect answers will penalize your score/time<br>by ten seconds!</h3>   
-            </div>  
-        </div>
         
-        <div id= "card" class="card">
-            <h1 id="question"></h1>
-            <div id="choices">
-            </div>
-            <button id="submit" class="btn">Start Quiz</button>
+        <!-- This holds the time remaining and high scores link -->
+        <div id="pageTopNav">
+            <p id="time"></p>
+            <a id="viewScores">View High Scores</p>
         </div>
-        <script src="./script.js"></script>    
-    </body>
-</html>
+
+        <!-- This holds the start page-->    
+        <div id="startPage">
+            <h1>Welcome to the Quiz</h1>
+            <p>Press start to begin, but note you only have 70 seconds to complete it. Every incorrect answer subtracts 10 seconds!</p>
+            <button onclick="displayQuestion()">Start</button>
+        </div> 
+        
+        <!-- This page holds all of the Questions-->
+        <div id="questionPage">
+            </div id="QuestionTitle"></div>
+            <button id="a" onclick="checkAnswer('a')"></button>
+            <button id="b" onclick="checkAnswer('b')"></button>
+            <button id="c" onclick="checkAnswer('c')"></button>
+            <button id="d" onclick="checkAnswer('d')"></button>
+
+        </div>
+
+        <!-- Show the results of the Quiz -->
+        <div id="results">
+            <h1>Alld done!</h1>
+            <div id="yourScore"></div>
+            <p>Enter initials:</p>
+            <input id="userInits" type="text"></input>
+            <button onclick="highScore()">Submit</button>
+
+        </div>    
+        
+        <!-- Shows the High Scores-->
+        <div id="highScores">
+            <h1>High Scores</h1>
+            <div id="highestScore"></div>
+            <button onclick="welcome()">Go back</button>
+            <button onclick="clearScore()">Clear High Scores</button>
+        </div>
+
+        <!-- Shows the result of the previous question-->
+        <div id="isCorrectField">
+        
+        </div>
+    </body>    
+    <script src="./script.js"></script>    
+    </html>
