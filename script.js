@@ -65,3 +65,25 @@ var questions = [
     },
 ];              
     
+/************************** MAIN FUNCTIONS *************************************************/
+//Welcome Function - Displays Welcome Page
+function welcome () {
+    timeTracker.style.display ="block";
+
+    questionNumber = 0; //Resets question number to 0
+    timeRemaining = 70; //Resets time remaining to 70
+    startPageContainer.style.display="block";
+    console.log("Welcome Function");
+    questionPageContainer.style.display="none";
+    resultsPageContainer.style.display="none";
+    highScoresPageContainer.style.display="none";
+    isCorrectContainer.style.display="none";
+}
+
+
+
+
+
+/***************************** START EXECUTION ON PAGE LOAD *********************************/
+console.log("Javascript loaded");
+window.addEventListener("load", welcome(), false);
