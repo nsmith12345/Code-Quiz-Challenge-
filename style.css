@@ -1,15 +1,12 @@
-/* global properties */
-
 :root {
-
     border: 5px outset black;
     background-color: rgb(245, 249, 250);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    display: flex-center;
+    display: -ms-flexbox;
+    
 }
 
-/* Local Properties */
 
 @media (max-width: 690px) {
     .btn {
