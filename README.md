@@ -1,4 +1,4 @@
-# Code-Quiz-Challenge-
+# Nates-Super-Quiz
 
 Purpose:
 The user can test their knowledge on Javascript fundamentals in a timed environment.
@@ -26,15 +26,15 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
-Built with
+Built with:
 
 HTML
 CSS
 Javascript
 
-Website
+Website:
 
 
-Contribution
 
+Contribution:
 Nathan Smith 
