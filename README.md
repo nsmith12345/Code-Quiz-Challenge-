@@ -4,8 +4,7 @@ Purpose
 The user can test their knowledge on Javascript fundamentals in a timed environment.
 
 Image
-
-
+![#Code-Quiz-Challenge-Front-Page](./Images/Code-Quiz-Challenge-Front-Page.jpeg)
 
 User Story
 AS A coding boot camp student
